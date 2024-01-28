@@ -34,6 +34,7 @@ class FileLikeLogger():
     def write(self, data):
         lines = data.splitlines()
         for line in lines:
+            print("Tejas")
             self.log.debug(line.rstrip("\n"))
 
     def flush(self):
